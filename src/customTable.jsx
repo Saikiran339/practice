@@ -72,13 +72,13 @@ useEffect (() => {
 
     const companyOptions = [
         {
-            label: "DC Company"
+            label: "DC United"
         },
         {
-            label: "DC Company"
+            label: "Manchester United"
         },
         {
-            label: "DC Company"
+            label: "LA Galaxy"
         },
       ]
 

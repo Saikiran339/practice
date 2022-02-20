@@ -3,7 +3,6 @@ import { Avatar, Grid, Paper, TextField, Typography, Link } from '@material-ui/c
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Checkbox from '@material-ui/core/Checkbox';
 import { Button } from '@material-ui/core';
-import Popup from './popup';
 import {useLocation, useNavigate} from 'react-router-dom';
 
 function Login() {

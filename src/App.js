@@ -13,6 +13,10 @@ import Box from '@mui/material/Box';
 import './App.css';
 import CustomTable from './customTable';
 import CustomCheckbox from "./customCheckbox";
+import { Route, BrowserRouter, Routes} from 'react-router-dom';
+import Login from './login.jsx';
+
+
 
 const style = {
   position: 'absolute',
@@ -73,24 +77,16 @@ function App () {
             </div>
           </Box>
         </Modal>
-
-
-
-
-          {/* <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={() => setModalIsOpen(false)}
-            >
-          <TextField label='Username' placeholder='Enter Username' fullWidth required></TextField>
-          <TextField label='Email' placeholder='Enter Email' fullWidth required></TextField>
-          <br></br>
-          <br></br>
-          <br></br>
-        <div>
-          <button onClick={() => setModalIsOpen(false)}>Close</button>
-        </div>
-        </Modal> */}
           </h1>
+          <BrowserRouter>
+    
+    <Routes>
+                <Route  path="/" element={<Login/>} />
+                {/* <Route exact path="/home" element={<Popup/>} />
+                <Route path="*"  element={<Login/>} />
+                <Route path="/table"  element={<CreateData/>} /> */}
+    </Routes>
+    </BrowserRouter>
         </AppBar>
         <br/>
         </Grid>
@@ -108,6 +104,7 @@ function App () {
               <CustomTable />
         </Grid >
         </Grid>
+        
        {/* <CustomCheckbox></CustomCheckbox> */}
       
       </>
